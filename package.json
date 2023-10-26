@@ -1,0 +1,21 @@
+{
+    "name": "qa-automation2024",
+    "version": "1.0.0",
+    "description": "qa automation course js",
+    "main": "index.js",
+    "scripts": {
+
+        "test": "jest && start reports/test-report.html"
+    },
+    "author": "gvantsa.shakarashvili@gmail.com",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^1.4.0"
+    },
+    "devDependencies": {
+        "jest": "^29.5.0",
+        "jest-html-reporter": "^3.10.2"
+
+    },
+    "jest": { "reporters": ["default", ["jest-html-reporter", { "pageTitle": "Test Report", "outputPath": "reports/test-report.html" }]] }
+}
